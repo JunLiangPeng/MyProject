@@ -1,0 +1,191 @@
+body {
+  background: #f4f4f4; }
+
+#logo_wrap {
+  background: #f4f4f4;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd; }
+  #logo_wrap .logo {
+    width: 1200px;
+    margin: 0 auto; }
+    #logo_wrap .logo .beat {
+      display: inline-block;
+      width: 225px;
+      height: 52px;
+      background: url(../img/logo.png) no-repeat;
+      background-size: 144px auto;
+      float: left;
+      margin-top: 14px; }
+    #logo_wrap .logo .process {
+      position: relative;
+      width: 494px;
+      height: 65px;
+      float: right;
+      background: url(../img/red.png) repeat-x 23px 18px, url(../img/repeat.png) repeat-x 0 18px;
+      font-size: 12px; }
+      #logo_wrap .logo .process .num {
+        display: block;
+        width: 23px;
+        height: 23px;
+        float: left; }
+      #logo_wrap .logo .process span:nth-of-type(1) {
+        position: absolute;
+        top: 18px;
+        text-align: center;
+        line-height: 23px; }
+      #logo_wrap .logo .process span:nth-of-type(2) {
+        position: absolute;
+        top: 18px;
+        left: 157px;
+        text-align: center;
+        line-height: 23px; }
+      #logo_wrap .logo .process span:nth-of-type(3) {
+        position: absolute;
+        top: 18px;
+        left: 314px;
+        text-align: center;
+        line-height: 23px; }
+      #logo_wrap .logo .process span:nth-of-type(4) {
+        position: absolute;
+        top: 18px;
+        left: 471px;
+        text-align: center;
+        line-height: 23px; }
+      #logo_wrap .logo .process span:nth-of-type(5) {
+        position: absolute;
+        top: 40px;
+        left: 10px;
+        text-align: center;
+        line-height: 23px;
+        margin-left: -50px;
+        width: 100px;
+        height: 20px;
+        color: #ff4466; }
+      #logo_wrap .logo .process span:nth-of-type(6) {
+        position: absolute;
+        top: 40px;
+        left: 172px;
+        text-align: center;
+        line-height: 23px;
+        margin-left: -50px;
+        width: 100px;
+        height: 20px; }
+      #logo_wrap .logo .process span:nth-of-type(7) {
+        position: absolute;
+        top: 40px;
+        left: 327px;
+        text-align: center;
+        line-height: 23px;
+        margin-left: -50px;
+        width: 100px;
+        height: 20px; }
+      #logo_wrap .logo .process span:nth-of-type(8) {
+        position: absolute;
+        top: 40px;
+        left: 480px;
+        text-align: center;
+        line-height: 23px;
+        margin-left: -50px;
+        width: 100px;
+        height: 20px; }
+
+.g-wrap {
+  width: 100%;
+  background: #f4f4f4;
+  padding-top: 30px; }
+  .g-wrap .cart-page {
+    width: 1200px;
+    margin: 0 auto; }
+    .g-wrap .cart-page table {
+      border-spacing: 0;
+      padding: 20px 26px;
+      border: none;
+      width: 1200px;
+      background: #fff; }
+      .g-wrap .cart-page table thead {
+        display: table-header-group;
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+        border-bottom: 1px solid grey; }
+        .g-wrap .cart-page table thead tr th {
+          font-size: 12px;
+          font-weight: normal;
+          border: none; }
+          .g-wrap .cart-page table thead tr th:nth-of-type(1) {
+            width: 56px;
+            padding: 15px 0; }
+          .g-wrap .cart-page table thead tr th:nth-of-type(2) {
+            width: 300px;
+            padding: 15px 0; }
+          .g-wrap .cart-page table thead tr th:nth-of-type(3) {
+            width: 140px;
+            padding: 15px 0;
+            text-align: left; }
+          .g-wrap .cart-page table thead tr th:nth-of-type(4) {
+            width: 103px;
+            padding: 15px 0; }
+          .g-wrap .cart-page table thead tr th:nth-of-type(5) {
+            width: 159px;
+            padding: 15px 0; }
+          .g-wrap .cart-page table thead tr th:nth-of-type(6) {
+            width: 100px;
+            padding: 15px 0; }
+          .g-wrap .cart-page table thead tr th:nth-of-type(7) {
+            width: 80px;
+            padding: 15px 0; }
+      .g-wrap .cart-page table tbody {
+        border: 0; }
+        .g-wrap .cart-page table tbody tr {
+          padding-top: 20px;
+          border-bottom: 1px solid #cecece; }
+          .g-wrap .cart-page table tbody tr td {
+            padding-bottom: 10px;
+            border: 0;
+            border-bottom: 1px solid #cecece; }
+            .g-wrap .cart-page table tbody tr td:nth-of-type(1) {
+              padding: 16px 0;
+              line-height: 24px; }
+            .g-wrap .cart-page table tbody tr td:nth-of-type(2) {
+              width: 506px;
+              display: flex; }
+              .g-wrap .cart-page table tbody tr td:nth-of-type(2) img {
+                float: left;
+                width: 80px;
+                height: 80px; }
+              .g-wrap .cart-page table tbody tr td:nth-of-type(2) a {
+                float: left;
+                font-size: 12px;
+                margin-left: 20px; }
+            .g-wrap .cart-page table tbody tr td:nth-of-type(3) {
+              font-size: 12px; }
+            .g-wrap .cart-page table tbody tr td:nth-of-type(4) {
+              font-size: 12px;
+              text-align: center; }
+            .g-wrap .cart-page table tbody tr td:nth-of-type(5) {
+              text-align: center; }
+              .g-wrap .cart-page table tbody tr td:nth-of-type(5) span {
+                display: inline-block;
+                width: 27px;
+                height: 27px;
+                vertical-align: middle;
+                border: 1px solid #cecece;
+                margin-left: 0;
+                margin-right: 0;
+                box-sizing: border-box;
+                cursor: pointer; }
+              .g-wrap .cart-page table tbody tr td:nth-of-type(5) input {
+                width: 45px;
+                height: 27px;
+                margin-right: 0;
+                margin-left: 0;
+                box-sizing: border-box;
+                text-align: center; }
+            .g-wrap .cart-page table tbody tr td:nth-of-type(6) {
+              font-size: 12px;
+              text-align: center; }
+            .g-wrap .cart-page table tbody tr td:nth-of-type(7) {
+              font-size: 12px;
+              text-align: center;
+              cursor: pointer; }

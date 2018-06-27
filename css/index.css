@@ -1,0 +1,303 @@
+@charset "UTF-8";
+.aside_outer {
+  width: 39px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #f6f6f6;
+  z-index: 201; }
+  .aside_outer .inner {
+    width: 38px;
+    height: 575px;
+    position: absolute;
+    top: 62px; }
+    .aside_outer .inner div {
+      padding: 0 14px;
+      font-size: 12px;
+      cursor: pointer;
+      border-top: 1px solid #ddd; }
+      .aside_outer .inner div:hover {
+        background: #FF3366;
+        color: #fff; }
+    .aside_outer .inner .download {
+      background: url(../img/phone.png) 13px 10px no-repeat;
+      line-height: 1.2;
+      padding-top: 41px;
+      height: 70px; }
+      .aside_outer .inner .download:hover {
+        background: url(../img/phoneH.png) 13px 10px no-repeat #f33866; }
+      .aside_outer .inner .download span {
+        width: 40px;
+        height: 20px;
+        display: inline-block;
+        margin-top: 12px;
+        margin-left: -16px;
+        transform: rotate(90deg); }
+    .aside_outer .inner .cart {
+      height: 61px;
+      background: url(../img/gouwuche.png) 10px 9px no-repeat;
+      padding-top: 36px;
+      position: relative; }
+      .aside_outer .inner .cart:hover {
+        background: url(../img/gouwwcheH.png) 10px 9px no-repeat #f33866; }
+        .aside_outer .inner .cart:hover a {
+          color: white; }
+    .aside_outer .inner .service {
+      height: 52px;
+      background: url(../img/xiaoxi.png) 12px 9px no-repeat;
+      padding-top: 36px; }
+      .aside_outer .inner .service:hover {
+        background: url(../img/xioaxiH.png) 12px 9px no-repeat #f33866; }
+    .aside_outer .inner .coupon {
+      background: url(../img/youhuiquan.png) 12px 9px no-repeat;
+      padding-top: 36px;
+      padding-bottom: 16px; }
+      .aside_outer .inner .coupon:hover {
+        background: url(../img/youhuiquanH.png) 12px 9px no-repeat #f33866; }
+    .aside_outer .inner .mark {
+      background: url(../img/shoucang.png) 12px 9px no-repeat;
+      padding-top: 36px;
+      padding-bottom: 26px; }
+      .aside_outer .inner .mark:hover {
+        background: url(../img/shoucangH.png) 12px 9px no-repeat #f33866; }
+    .aside_outer .inner .footprint {
+      background: url(../img/足迹.png) 12px 9px no-repeat;
+      padding-top: 36px;
+      padding-bottom: 26px; }
+      .aside_outer .inner .footprint:hover {
+        background: url(../img/zujiH.png) 12px 9px no-repeat #f33866; }
+  .aside_outer .gettop {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 38px;
+    height: 40px;
+    text-align: center;
+    background: url(../img/getTop.png) 12px 16px no-repeat;
+    border-top: 1px solid #ddd;
+    cursor: pointer;
+    display: none; }
+    .aside_outer .gettop:hover {
+      background: url(../img/gettopH.png) 12px 16px no-repeat #f33866; }
+
+.search {
+  height: 158px;
+  position: relative; }
+  .search a {
+    float: left; }
+    .search a .logo {
+      width: 204px;
+      height: 52px;
+      background: url(../img/logo.png) no-repeat 0 0;
+      background-size: cover;
+      margin-top: 40px;
+      float: left; }
+  .search .searchbox {
+    width: 520px;
+    position: absolute;
+    left: 50%;
+    top: 21px;
+    margin-left: -240px; }
+    .search .searchbox .searchtab {
+      width: 56px;
+      background: #ff3366;
+      font-size: 12px;
+      text-align: center;
+      line-height: 24px;
+      color: white; }
+    .search .searchbox .searchkuang {
+      width: 520px;
+      height: 30px;
+      border: 2px solid #ff3366; }
+      .search .searchbox .searchkuang input {
+        float: left;
+        text-indent: 10px; }
+        .search .searchbox .searchkuang input:nth-of-type(1) {
+          width: 449px;
+          height: 28px;
+          font-size: 12px; }
+      .search .searchbox .searchkuang .searchbtn {
+        width: 67px;
+        height: 32px;
+        float: left;
+        background: #ff3366;
+        cursor: pointer;
+        background: #ff3366 url(../img/search.png) no-repeat center center; }
+    .search .searchbox .hotword {
+      font-size: 12px;
+      margin-top: 12px; }
+      .search .searchbox .hotword a {
+        margin-right: 12px; }
+    .search .searchbox ul {
+      position: absolute;
+      left: 0;
+      top: 60px;
+      z-index: 999;
+      opacity: 1;
+      font-size: 12px;
+      border: 1px solid #ddd;
+      background: white; }
+      .search .searchbox ul li {
+        display: block;
+        clear: both;
+        padding: 2px 10px;
+        color: #666;
+        line-height: 20px;
+        width: 433px;
+        height: 20px; }
+        .search .searchbox ul li:hover {
+          cursor: pointer; }
+        .search .searchbox ul li a {
+          display: inline-block; }
+        .search .searchbox ul li .tags {
+          display: inline-block;
+          float: right; }
+          .search .searchbox ul li .tags span:hover {
+            color: red;
+            cursor: pointer; }
+        .search .searchbox ul li:hover {
+          background: #f2f0f1; }
+          .search .searchbox ul li:hover a {
+            color: #ff3366; }
+  .search .spread {
+    position: absolute;
+    right: 0;
+    top: 3px;
+    width: 210px;
+    height: 157px;
+    background: url(../img/erweima.gif) no-repeat;
+    z-index: -1; }
+
+#nav_wrap {
+  border-bottom: 1px solid #ddd; }
+
+nav {
+  width: 1200px;
+  height: 40px;
+  margin: 0 auto;
+  background: #fff;
+  margin-bottom: 10px; }
+  nav ul li {
+    float: left;
+    width: 109px;
+    height: 38px;
+    line-height: 38px; }
+    nav ul li:nth-of-type(1) a {
+      display: inline-block;
+      color: #f36;
+      border-bottom: 2px solid #f36;
+      height: 38px; }
+    nav ul li a {
+      height: 38px;
+      font-size: 16px;
+      font-weight: 900; }
+      nav ul li a:hover {
+        display: inline-block;
+        color: #f36;
+        border-bottom: 2px solid #f36;
+        height: 38px; }
+
+.banner {
+  width: 1200px;
+  margin: 0 auto;
+  height: 400px; }
+  .banner a {
+    display: block;
+    width: 1200px;
+    height: 400px;
+    background: url(../img/banner.jpg) no-repeat center center;
+    background-size: contain; }
+
+#main_wrap {
+  width: 100%; }
+
+.main {
+  overflow: hidden;
+  width: 1200px;
+  margin: 0 auto; }
+  .main .title {
+    width: 1200px;
+    height: 28px;
+    padding-top: 43px;
+    color: #6f6f6f; }
+    .main .title span {
+      display: inline-block;
+      font-size: 20px;
+      font-weight: 900;
+      float: left; }
+    .main .title h4 {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      float: right; }
+  .main .contents {
+    overflow: hidden;
+    padding-bottom: 40px; }
+    .main .contents ul {
+      float: left;
+      width: 240px; }
+      .main .contents ul:nth-of-type(5) li {
+        margin-right: 0; }
+      .main .contents ul li {
+        margin-top: 24px;
+        margin-bottom: 3px;
+        float: left;
+        width: 224px;
+        margin-top: 10px; }
+        .main .contents ul li .bg {
+          height: 330px;
+          width: 224px;
+          cursor: pointer; }
+          .main .contents ul li .bg img {
+            width: 224px;
+            height: 330px; }
+        .main .contents ul li .price {
+          width: 224px;
+          height: 30px; }
+          .main .contents ul li .price span:nth-of-type(1) {
+            float: left;
+            color: #ff3366;
+            line-height: 30px; }
+          .main .contents ul li .price span:nth-of-type(2) {
+            line-height: 30px;
+            color: #a599a5;
+            float: right; }
+            .main .contents ul li .price span:nth-of-type(2) i {
+              float: left;
+              width: 13px;
+              height: 13px;
+              background: url(../img/star.png) no-repeat;
+              background-size: cover;
+              margin-top: 8px; }
+        .main .contents ul li .tips span {
+          display: block;
+          width: 38px;
+          height: 17px;
+          background: #e40046;
+          color: #fff;
+          font-size: 12px;
+          text-align: center;
+          line-height: 17px;
+          float: left;
+          margin-right: 5px; }
+        .main .contents ul li .tips h5 {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+
+#floatad {
+  width: 181px;
+  height: 162px;
+  position: fixed;
+  left: 0;
+  bottom: -10px; }
+  #floatad span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/close.png) no-repeat left top;
+    position: absolute;
+    left: 157px;
+    top: 0px;
+    cursor: pointer; }

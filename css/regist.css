@@ -1,0 +1,121 @@
+#logo1_wrap {
+  width: 100%; }
+  #logo1_wrap .logo1 {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px 0; }
+    #logo1_wrap .logo1 a {
+      display: inline-block;
+      width: 220px;
+      height: 50px;
+      background: url(../img/logo.png) no-repeat left top/cover; }
+    #logo1_wrap .logo1 span {
+      position: absolute;
+      top: 32px;
+      display: inline-block;
+      height: 28px;
+      width: 861px;
+      margin-left: 20px;
+      background: #ffefef;
+      border: 1px solid #ffc0cc;
+      text-align: center;
+      line-height: 28px;
+      font-size: 11px;
+      color: 666; }
+
+.main {
+  width: 100%;
+  height: 600px;
+  background: url(../img/mainbj.jpg) no-repeat center center;
+  overflow: hidden; }
+  .main > a {
+    float: left;
+    display: inline-block;
+    width: 700px;
+    height: 440px;
+    margin-left: 56px;
+    margin-top: 80px; }
+  .main .login {
+    float: left;
+    width: 400px;
+    background: #ffeceb;
+    margin-left: 20px;
+    margin-top: 80px; }
+    .main .login .top {
+      width: 394px;
+      height: 70px;
+      float: right; }
+      .main .login .top .m1 {
+        float: left;
+        width: 197px;
+        height: 54px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #ccc; }
+        .main .login .top .m1 a {
+          display: inline-block;
+          width: 119px;
+          height: 43px;
+          font-size: 14px;
+          line-height: 43px;
+          text-align: center; }
+          .main .login .top .m1 a.active {
+            border-bottom: 2px solid #ff4066; }
+    .main .login p {
+      display: none;
+      width: 315px;
+      height: 30px;
+      float: left;
+      background: url(../img/tips.png) no-repeat 12px #fffff8;
+      font-size: 12px;
+      border: 1px solid #ffd797;
+      line-height: 32px;
+      padding-left: 40px;
+      box-sizing: border-box;
+      margin-left: 44px;
+      color: #ff1877; }
+    .main .login .form1 {
+      box-sizing: border-box;
+      padding-left: 44px; }
+      .main .login .form1 input {
+        width: 314px;
+        height: 42px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        padding: 0 6px;
+        margin-top: 15px;
+        background: #ffeceb; }
+        .main .login .form1 input:nth-of-type(3) {
+          margin-top: 25px;
+          color: #fff;
+          background: #ff5777;
+          cursor: pointer; }
+    .main .login .wechat {
+      margin-left: 47px;
+      margin-top: 26px; }
+      .main .login .wechat i {
+        display: inline-block;
+        width: 18px;
+        height: 19px;
+        background: url(../img/wechat.png) no-repeat left top;
+        vertical-align: middle; }
+      .main .login .wechat a {
+        font-size: 12px; }
+    .main .login .bot {
+      float: right;
+      padding-right: 44px;
+      padding-bottom: 32px; }
+      .main .login .bot a {
+        display: inline-block;
+        width: 48px;
+        height: 14px;
+        font-size: 12px;
+        line-height: 14px; }
+        .main .login .bot a:nth-of-type(1) {
+          margin-right: 25px;
+          text-decoration: underline; }
+        .main .login .bot a:nth-of-type(2) {
+          color: #fe5979;
+          text-decoration: underline; }

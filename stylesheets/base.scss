@@ -1,0 +1,201 @@
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend,input{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset{border:0; }
+img{display:block;}
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{ font-family:"微软雅黑";}
+input,a{outline:none;}
+
+header,.logo,nav,.search{
+    width:1200px;
+    margin:0 auto;    
+}
+#header_wrap{
+    width:100%;
+    background:#f8f8f8;
+}
+
+header{
+    z-index: 200;
+    position:relative;
+    ul{position:relative}
+    min-height:30px;
+    font-size:12px;
+    background:#f8f8f8;
+    >ul>li{
+        float:left;
+        height:20px;
+        margin-top:5px;
+        padding:0 18px;
+        border-right:1px dotted #666;
+        position:relative;
+        &:nth-of-type(1){
+            border:0;
+            span{
+                background: url(../img/bg.png) no-repeat 0 0;
+                margin-right:10px;
+            }
+        }
+        &:nth-of-type(2){
+            margin-left:290px;
+            span{
+                background:url(../img/bg.png) no-repeat -25px 0;
+                margin-right:8px;
+            }
+        }
+        &:nth-of-type(5){
+            span{
+                background:url(../img/bg.png) no-repeat -76px 0;
+                margin-right:8px;
+            }
+           
+        }
+        //划过是ul显示
+         ul{
+            display:none;
+            margin-top:5px;
+            //background:yellow;
+               li{  
+                    height:20px;
+                    line-height:20px;
+                    text-align: center;
+                    background:#f8f8f8;
+                    padding:3px 3px;
+                    a:hover{
+                            color:red;
+                        }
+                }
+           }
+           &:hover ul{
+               display: block;
+           }
+        
+        /////////////////////////////////////////////////////
+        &:nth-of-type(6){
+            span{
+                background:url(../img/bg.png) no-repeat -102px 0;
+                margin-right:7px;
+            }
+        }
+        &:nth-of-type(7){
+            span{
+                background:url(../img/bg.png) no-repeat -130px 0;
+                margin-right:7px;
+            }
+        }
+        &:nth-of-type(8){
+            span{
+                width:6px;
+                height:16px;
+                float:right;
+                background:url(../img/bg.png) no-repeat -180px 0;
+                margin-right:7px;
+                margin-left:10px;
+                margin-right:6px;
+            }
+        }
+        &:nth-of-type(9){
+            border-right:0;
+        }
+        
+        a{
+            span{
+                width:18px;
+                height:16px;
+                float:left;
+                }  
+            &:hover{
+            color:red;
+            }
+        }
+        
+    }
+}
+
+
+
+
+#footer_wrap{
+    width:100%;
+    border-top:1px solid #ddd;
+    background:#f5f5f5;
+    .footer{
+        width:1200px;
+        margin:0 auto;
+        margin-top:15px;
+        padding-top:30px;
+        color:#666;
+        background:#f5f5f5;
+        overflow: hidden;
+        .first{
+            h4{
+                font-weight: 900;
+            }
+            float:left;
+            width:64px;
+            margin-right:104px;
+            margin-bottom:20px;
+            line-height:26px;
+            .link{
+                margin-top:12px;
+                font-size:12px;
+                width:100%;  
+                display: block;              
+                a span{
+                    float:left;
+                    height:18px;
+                    width:18px;
+                    margin-top:5px;
+                    margin-right:5px;
+                }
+                &:nth-of-type(1) a span{
+                    background:url(../img/weibo.png) no-repeat;
+                }
+                &:nth-of-type(2) a span{
+                    background:url(../img/weibo.png) no-repeat -28px 0;
+                }
+                &:nth-of-type(3) a span{
+                    background:url(../img/weibo.png) no-repeat -56px 0;
+                }
+            }
+        }
+        
+        .absolute{
+            margin-right:0;
+            display: block;
+            width:71px;
+        }
+        .wxservice{
+            width:128px;
+            margin-left:228px;
+            margin-right:55px;
+            img{
+                margin-top:13px;
+            }
+        }
+        
+        .last{
+            width:128px;
+            margin-right:0;
+            img{
+                margin-top:13px;
+            }
+        }
+    }
+    .bottom{
+        border-top:1px solid #e6e6e6;
+        padding:12px 0;
+        font-size:12px;
+        text-align: center;
+        line-height: 22px;
+        div{
+            width:100%;
+            a:hover{
+                color:#F33866;
+            }
+        }
+    }
+    
+    
+}
