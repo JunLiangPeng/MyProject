@@ -74,9 +74,12 @@ header {
           color: red; }
     header > ul > li:hover ul {
       display: block; }
-    header > ul > li:nth-of-type(6) span {
-      background: url(../img/bg.png) no-repeat -102px 0;
-      margin-right: 7px; }
+    header > ul > li:nth-of-type(6) {
+      padding-right: 30px;
+      position: relative; }
+      header > ul > li:nth-of-type(6) span {
+        background: url(../img/bg.png) no-repeat -102px 0;
+        margin-right: 7px; }
     header > ul > li:nth-of-type(7) span {
       background: url(../img/bg.png) no-repeat -130px 0;
       margin-right: 7px; }
@@ -159,3 +162,15 @@ header {
       width: 100%; }
       #footer_wrap .bottom div a:hover {
         color: #F33866; }
+
+#cartnum1 {
+  display: inline-block;
+  width: 19px;
+  height: 15px;
+  background: red;
+  position: absolute;
+  right: 0;
+  top: 2px;
+  line-height: 15px;
+  text-align: center;
+  color: #fff; }

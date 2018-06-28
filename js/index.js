@@ -1,6 +1,4 @@
 window.onload = function(){
-	
-
 $(function(){
 	$("#txt1").bind("input propertyinput",function(){
 		var val = $("#txt1").val();
@@ -60,8 +58,14 @@ $(function(){
 			if(scrollTop > oPubu[i].offsetHeight - clientHeight && oPubu[i].offsetHeight<=8040){
 				//console.log(i);
 				var str = "";
-				for(var j = 0;j < data.length; j++){
-					var a = Math.floor(Math.random()*9);
+				
+				for(var j in data){
+					var a = Math.floor(Math.random()*7)+10000;
+					//console.log(a);
+					//console.log(a);
+					//console.log("a");
+					//console.log(data[0])
+					//console.log(data["10001"]);
 					str += `<li productId="${data[a].productId}">
 							<div class="bg">
 								<img src="${data[a].url}"/>
@@ -102,16 +106,24 @@ $(function(){
 		}else{
 			$(".gettop").css("display","block");
 		}
+		
+		$(".pubuliu li").click(function(){
+		//console.log("aaa");
+		console.log($(this).attr("productId"));
+		//window.location.href = "html/details.html";
+		window.open("html/details.html?&productId="+$(this).attr("productId")+"");
+	});
+		
+		
+		
+		
 	}
 	$(".gettop").click(function(){
 			$("body,html").animate({scrollTop:0},100);
 		})
 	
 	
-	$("#list li").click(function(){
-		window.location.href = "html/details.html";
-		console.log("aaa");
-	});
+	
 	
 	
 	$("#floatad").find("span").click(function(){
@@ -120,9 +132,14 @@ $(function(){
 		
 	})
 	
+	var cdata = $.cookie();
+	console.log(cdata);
+	var a = 0;
+	for(var i in cdata){
+		a+=Number($.cookie()[i]);
+	}
 	
-	
-	
-	
+	$("#cartnum").text(a);
+	$("#cartnum1").text(a);
 })
 }

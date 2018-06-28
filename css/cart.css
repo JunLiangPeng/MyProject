@@ -175,13 +175,18 @@ body {
                 margin-right: 0;
                 box-sizing: border-box;
                 cursor: pointer; }
+                .g-wrap .cart-page table tbody tr td:nth-of-type(5) span:nth-of-type(1) {
+                  background: url(../img/jiajian.png) no-repeat 0 -180px; }
+                .g-wrap .cart-page table tbody tr td:nth-of-type(5) span:nth-of-type(2) {
+                  background: url(../img/jiajian.png) no-repeat 0 -140px; }
               .g-wrap .cart-page table tbody tr td:nth-of-type(5) input {
                 width: 45px;
                 height: 27px;
                 margin-right: 0;
                 margin-left: 0;
                 box-sizing: border-box;
-                text-align: center; }
+                text-align: center;
+                display: inline-block; }
             .g-wrap .cart-page table tbody tr td:nth-of-type(6) {
               font-size: 12px;
               text-align: center; }
@@ -189,3 +194,40 @@ body {
               font-size: 12px;
               text-align: center;
               cursor: pointer; }
+    .g-wrap .cart-page .cartpayer {
+      width: 1200px;
+      height: 50px;
+      line-height: 50px;
+      background: white;
+      position: relative;
+      font-size: 12px; }
+      .g-wrap .cart-page .cartpayer input {
+        margin-left: 36px;
+        vertical-align: middle; }
+      .g-wrap .cart-page .cartpayer label {
+        color: #333; }
+      .g-wrap .cart-page .cartpayer > span {
+        color: #333; }
+        .g-wrap .cart-page .cartpayer > span:nth-of-type(1) {
+          margin-left: 16px;
+          cursor: pointer; }
+      .g-wrap .cart-page .cartpayer div {
+        display: inline-block;
+        float: right; }
+        .g-wrap .cart-page .cartpayer div span:nth-of-type(1) {
+          margin: 0 5px;
+          color: red; }
+        .g-wrap .cart-page .cartpayer div span:nth-of-type(2) {
+          color: #f13e3a;
+          font-size: 20px;
+          font-weight: 700; }
+      .g-wrap .cart-page .cartpayer #gopay {
+        float: right;
+        width: 152px;
+        height: 50px;
+        font-size: 20px;
+        background: #d8d8d8;
+        text-align: center;
+        cursor: pointer;
+        color: #fff;
+        margin-left: 20px; }

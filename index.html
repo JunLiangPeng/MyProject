@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="css/base.css"/>
 		<link rel="stylesheet" href="css/index.css"/>
 		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
 		<script src="js/data.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 	</head>
@@ -28,7 +29,8 @@
 				<div class="cart">
 					<a href="html/cart.html">
 						购物车
-					</a>					
+					</a>
+					<span id="cartnum"></span>
 				</div>
 				<div class="service">消息</div>
 				<div class="coupon">优惠券</div>
@@ -62,7 +64,11 @@
 						</ul>
 					</li>
 					<li>
-						<a href="html/cart.html"><span></span>我的购物车</a>
+						<a href="html/cart.html">
+							<span></span>
+							我的购物车
+						</a>
+						<span id="cartnum1"></span>
 					</li>
 					<li>
 						<a href=""><span></span>我的订单</a>
@@ -122,17 +128,17 @@
 		<div id="nav_wrap">
 			<nav>
 				<ul>
-					<li><a href="">首页</a></li>
-					<li><a href="">上衣</a></li>
-					<li><a href="">裙子</a></li>
-					<li><a href="">裤子</a></li>
-					<li><a href="">女鞋</a></li>
-					<li><a href="">包包</a></li>
-					<li><a href="">配饰</a></li>
-					<li><a href="">美妆</a></li>
-					<li><a href="">男友</a></li>
-					<li><a href="">童装</a></li>
-					<li><a href="">家居</a></li>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="html/category.html">上衣</a></li>
+					<li><a href="html/category.html">裙子</a></li>
+					<li><a href="html/category.html">裤子</a></li>
+					<li><a href="html/category.html">女鞋</a></li>
+					<li><a href="html/category.html">包包</a></li>
+					<li><a href="html/category.html">配饰</a></li>
+					<li><a href="html/category.html">美妆</a></li>
+					<li><a href="html/category.html">男友</a></li>
+					<li><a href="html/category.html">童装</a></li>
+					<li><a href="html/category.html">家居</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -151,59 +157,28 @@
 					
 					<ul class="pubuliu">
 						
-						<li>
-							<div class="bg">
-								<img src="img/0.jpg"/>
-							</div>
-							<div class="price">
-								<span>199.9</span>
-								<span>
-									<i></i>
-									<span>888</span>
-								</span>
-							</div>
-							<div class="tips">
-								<span>优选</span>
-								<h5>瀑布流阿凡达阿斯顿发大师傅阿斯顿发撒旦法</h5>
-							</div>
-						</li>
-						<li>
+						<li productId="10001">
 							<div class="bg">
 								<img src="img/1.jpg"/>
 							</div>
 							<div class="price">
-								<span>199.9</span>
+								<span>￥14.00</span>
 								<span>
 									<i></i>
-									<span>888</span>
+									<span>285</span>
 								</span>
 							</div>
 							<div class="tips">
 								<span>优选</span>
-								<h5>瀑布流阿凡达阿斯顿发大师傅阿斯顿发撒旦法</h5>
+								<h5>2017夏韩版修身拼色针织吊带背心女荷叶边短款性感内搭针织衫</h5>
 							</div>
 						</li>
-						<li>
-							<div class="bg">
-								<img src="img/2.jpg"/>
-							</div>
-							<div class="price">
-								<span>199.9</span>
-								<span>
-									<i></i>
-									<span>888</span>
-								</span>
-							</div>
-							<div class="tips">
-								<span>优选</span>
-								<h5>瀑布流阿凡达阿斯顿发大师傅阿斯顿发撒旦法</h5>
-							</div>
-						</li>
+						
 						
 					</ul>
 					
 					<ul class="pubuliu">
-						<li>
+						<li productId="10007">
 							<div class="bg">
 								<img src="img/7.jpg"/>
 							</div>
@@ -216,46 +191,14 @@
 							</div>
 							<div class="tips">
 								<span>优选</span>
-								<h5>瀑布流阿凡达阿斯顿发大师傅阿斯顿发撒旦法</h5>
+								<h5>春季新款韩版高腰弹力显瘦学院风学生百搭修身紧身小脚裤铅笔裤女夏季薄款牛仔裤长裤</h5>
 							</div>
 						</li>
 						
-						<li>
-							<div class="bg">
-								<img src="img/4.jpg"/>
-							</div>
-							<div class="price">
-								<span>199.9</span>
-								<span>
-									<i></i>
-									<span>888</span>
-								</span>
-							</div>
-							<div class="tips">
-								<span>优选</span>
-								<h5>瀑布流阿凡达阿斯顿发大师傅阿斯顿发撒旦法</h5>
-							</div>
-						</li>
-						<li>
-							<div class="bg">
-								<img src="img/6.jpg"/>
-							</div>
-							<div class="price">
-								<span>199.9</span>
-								<span>
-									<i></i>
-									<span>888</span>
-								</span>
-							</div>
-							<div class="tips">
-								<span>优选</span>
-								<h5>瀑布流阿凡达阿斯顿发大师傅阿斯顿发撒旦法</h5>
-							</div>
-						</li>
 					</ul>
 					
 					<ul class="pubuliu">
-						<li>
+						<li productId="10002">
 							<div class="bg">
 								<img src="img/2.jpg"/>
 							</div>
@@ -268,79 +211,16 @@
 							</div>
 							<div class="tips">
 								<span>优选</span>
-								<h5>瀑布流阿凡达阿斯顿发大师傅阿斯顿发撒旦法</h5>
+								<h5>迪悠2018新款复古显瘦条纹宽松女士长袖衬衫韩版百搭学生衬衣</h5>
 							</div>
 						</li>
 						
-						<li>
-							<div class="bg">
-								<img src="img/5.jpg"/>
-							</div>
-							<div class="price">
-								<span>199.9</span>
-								<span>
-									<i></i>
-									<span>888</span>
-								</span>
-							</div>
-							<div class="tips">
-								<span>优选</span>
-								<h5>瀑布流阿凡达阿斯顿发大师傅阿斯顿发撒旦法</h5>
-							</div>
-						</li>
-						<li>
-							<div class="bg">
-								<img src="img/3.jpg"/>
-							</div>
-							<div class="price">
-								<span>199.9</span>
-								<span>
-									<i></i>
-									<span>888</span>
-								</span>
-							</div>
-							<div class="tips">
-								<span>优选</span>
-								<h5>瀑布流阿凡达阿斯顿发大师傅阿斯顿发撒旦法</h5>
-							</div>
-						</li>
+						
 					</ul>
 					
 					<ul class="pubuliu">
-						<li>
-							<div class="bg">
-								<img src="img/5.jpg"/>
-							</div>
-							<div class="price">
-								<span>199.9</span>
-								<span>
-									<i></i>
-									<span>888</span>
-								</span>
-							</div>
-							<div class="tips">
-								<span>优选</span>
-								<h5>瀑布流阿凡达阿斯顿发大师傅阿斯顿发撒旦法</h5>
-							</div>
-						</li>
 						
-						<li>
-							<div class="bg">
-								<img src="img/2.jpg"/>
-							</div>
-							<div class="price">
-								<span>199.9</span>
-								<span>
-									<i></i>
-									<span>888</span>
-								</span>
-							</div>
-							<div class="tips">
-								<span>优选</span>
-								<h5>瀑布流阿凡达阿斯顿发大师傅阿斯顿发撒旦法</h5>
-							</div>
-						</li>
-						<li>
+						<li productId="10007">
 							<div class="bg">
 								<img src="img/7.jpg"/>
 							</div>
@@ -353,7 +233,7 @@
 							</div>
 							<div class="tips">
 								<span>优选</span>
-								<h5>瀑布流阿凡达阿斯顿发大师傅阿斯顿发撒旦法</h5>
+								<h5>春季新款韩版高腰弹力显瘦学院风学生百搭修身紧身小脚裤铅笔裤女夏季薄款牛仔裤长裤</h5>
 							</div>
 						</li>
 					</ul>
@@ -361,40 +241,8 @@
 					
 					
 					<ul class="pubuliu">
-						<li>
-							<div class="bg">
-								<img src="img/4.jpg"/>
-							</div>
-							<div class="price">
-								<span>199.9</span>
-								<span>
-									<i></i>
-									<span>888</span>
-								</span>
-							</div>
-							<div class="tips">
-								<span>优选</span>
-								<h5>瀑布流阿凡达阿斯顿发大师傅阿斯顿发撒旦法</h5>
-							</div>
-						</li>
 						
-						<li>
-							<div class="bg">
-								<img src="img/5.jpg"/>
-							</div>
-							<div class="price">
-								<span>199.9</span>
-								<span>
-									<i></i>
-									<span>888</span>
-								</span>
-							</div>
-							<div class="tips">
-								<span>优选</span>
-								<h5>瀑布流阿凡达阿斯顿发大师傅阿斯顿发撒旦法</h5>
-							</div>
-						</li>
-						<li>
+						<li productId="10006">
 							<div class="bg">
 								<img src="img/6.jpg"/>
 							</div>
@@ -407,7 +255,7 @@
 							</div>
 							<div class="tips">
 								<span>优选</span>
-								<h5>瀑布流阿凡达阿斯顿发大师傅阿斯顿发撒旦法</h5>
+								<h5>春秋新款韩版学生长袖恶魔笑脸夹克两面穿bf宽松棒球服外套女</h5>
 							</div>
 						</li>
 					</ul>

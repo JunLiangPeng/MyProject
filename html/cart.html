@@ -6,6 +6,9 @@
 		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/cart.css"/>
 		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/data.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+		<script src="../js/cart.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<div id="header_wrap" style="background:white;">
@@ -65,24 +68,17 @@
 						<span>支付</span>
 						<span>完成</span>
 				</div>
-				
-				
-				
 			</div>
-			
-			
 		</div>
-		
-		
-		
 		<div class="g-wrap">
 			<div class="cart-page">
 				<table border="" cellspacing="collapse" cellpadding="">
 					<thead>
 						<tr>
 							<th>
-								<input type="checkbox" name="s_sail" id="allpic" value="" />
-								<label for="">全选</label>
+								<!--<input type="checkbox" name="s_sail" class="allpic" value="" />
+								<label for="">全选</label>-->
+								商品信息
 							</th>
 							<th>商品</th>
 							<th>商品信息</th>
@@ -93,7 +89,7 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
+						<!--<tr>
 							<td><input type="checkbox" name="" id="" value="" /></td>
 							<td>
 								<img src="../img/spic1.jpg" alt="" />
@@ -106,12 +102,10 @@
 							<td>
 								<span>90.00</span>
 							</td>
-							<td>
-								
-								<span>-</span>
+							<td class="shuliang">
+								<span></span>
 								<input type="text" value="1"/>
-								<span>+</span>
-								
+								<span></span>
 							</td>
 							<td>
 								90.3
@@ -119,75 +113,94 @@
 							<td>
 								<span>删除</span>
 							</td>
-						</tr>
+						</tr>-->
 						
-						
-						<tr>
-							<td><input type="checkbox" name="" id="" value="" /></td>
-							<td>
-								<img src="../img/spic1.jpg" alt="" />
-								<a href="">春季新款毛衣套装女韩版潮学生宽松针织开衫吊带阔腿裤套装三件套</a>
-							</td>
-							<td>
-								<p>颜色：蓝色</p>
-								<p>尺码：M</p>
-							</td>
-							<td>
-								<span>90.00</span>
-							</td>
-							<td>
-								
-								<span>-</span>
-								<input type="text" value="1"/>
-								<span>+</span>
-								
-							</td>
-							<td>
-								90.3
-							</td>
-							<td>
-								<span>删除</span>
-							</td>
-						</tr>
-						
-						
-						<tr>
-							<td><input type="checkbox" name="" id="" value="" /></td>
-							<td>
-								<img src="../img/spic1.jpg" alt="" />
-								<a href="">春季新款毛衣套装女韩版潮学生宽松针织开衫吊带阔腿裤套装三件套</a>
-							</td>
-							<td>
-								<p>颜色：蓝色</p>
-								<p>尺码：M</p>
-							</td>
-							<td>
-								<span>90.00</span>
-							</td>
-							<td>
-								
-								<span>-</span>
-								<input type="text" value="1"/>
-								<span>+</span>
-								
-							</td>
-							<td>
-								90.3
-							</td>
-							<td>
-								<span>删除</span>
-							</td>
-						</tr>
 					</tbody>
 				</table>
+				
+				<div class="cartpayer">
+					<input class="allpic" type="checkbox"/>
+					<label for="">全选</label>
+					<span id="">
+						删除
+					</span>
+					<span id="gopay">去付款></span>
+					<div>
+						共有<span>0</span>款商品,总计：<span id="zonggong">￥0.00</span>
+					</div>
+					
+				</div>
 			</div>
 		</div>
 		
 		
 		
 		
-		
-		
+		<div id="footer_wrap">
+			<div class="footer">
+				<div class="first">
+					<h4>买家帮助</h4>
+					<div class="link"><a href="">新手指南</a></div>
+					<div class="link"><a href="">服务保障</a></div>
+					<div class="link"><a href="">常见问题</a></div>
+					<div class="link"><a href="">风险检测</a></div>
+				</div>
+				<div class="first">
+					<h4>商家帮助</h4>
+					<div class="link"><a href="">供货商招募</a></div>
+					<div class="link"><a href="">商家后台</a></div>
+				</div>
+				<div class="first">
+					<h4>关于我们</h4>
+					<div class="link"><a href="">关于美丽说</a></div>
+					<div class="link"><a href="">联系我们</a></div>
+				</div>
+				<div class="first absolute">
+					<h4>关注我们</h4>
+					<div class="link">
+						<a href="">
+						<span></span>
+						新浪微博
+						</a>
+					</div>
+					<div class="link">
+						<a href="">
+							<span></span>
+							QQ空间
+						</a>
+					</div>
+					<div class="link">
+						<a href="">
+							<span></span>
+							腾讯微博
+						</a>
+					</div>
+				</div>
+				<div class="first wxservice">
+					<h4>美丽说微信服务号</h4>
+					<img src="../img/weixinfuwu.jpg"/>
+				</div>
+				
+				<div class="first last">
+					<h4>美丽说客户端下载</h4>
+					<img src="../img/appdownload.png"/>
+				</div>
+				
+			</div>
+			
+			<div class="bottom">
+				<div>
+					Copyright ©2017 Meilishuo.com
+					<a href="">电信与信息服务业务经营许可证100798号</a>
+					<a href=""> 经营性网站备案信息 </a>
+				</div>
+				
+				<div>
+					京ICP备11031139号  京公网安备110108006045   客服电话：400-8158-666  文明办网文明上网举报电话：010-82615762
+					<a href="">违法不良信息举报中心</a>
+				</div>
+			</div>
+		</div>
 		
 		
 		

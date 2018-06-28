@@ -73,6 +73,9 @@ header{
         
         /////////////////////////////////////////////////////
         &:nth-of-type(6){
+            padding-right:30px;
+            
+            position:relative;
             span{
                 background:url(../img/bg.png) no-repeat -102px 0;
                 margin-right:7px;
@@ -198,4 +201,18 @@ header{
     }
     
     
+}
+
+
+#cartnum1{
+    display: inline-block;
+    width:19px;
+    height:15px;
+    background:red;
+    position:absolute;
+    right:0;
+    top:2px;
+    line-height:15px;
+    text-align: center;
+    color:#fff;
 }

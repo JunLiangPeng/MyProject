@@ -1,8 +1,8 @@
 window.onload = function(){
 	$(function(){
-		var a = $("#num").val();
+		
 		$("#add").click(function(){
-			
+			var a = $("#num").val();
 			a++;
 			$("#num").val(a++);
 		});
@@ -26,7 +26,29 @@ window.onload = function(){
 		$(".m2").click(function(){
 			$(".m2").removeClass("clicked");
 			$(this).addClass("clicked");
-		})
+		});
+		
+		var id = window.location.href.split("=")[1];
+		//console.log(id);
+		//console.log(data[id].url)
+		$(".pic-big").css("background","url(../"+data[id].url+") no-repeat left top/cover")
+		$(".goods-right h1").text(data[id].title);
+		$("#pri").text(data[id].price);
+		$(".color").css("background","url(../"+data[id].url+") no-repeat 0 0/cover")
+		
+		$(".addgoods").click(function(){
+			var count = $("#num").val();
+			console.log(count);
+			$.cookie(id,count,{expires:7,path:"/"});
+			$(".addafter").fadeIn();
+			$(".addafter div").eq(0).click(function(){
+				$(".addafter").fadeOut();
+			});
+			$(".addafter div").eq(2).click(function(){
+				window.location.href = "cart.html";
+			})
+		});
+		
 		
 	})
 }

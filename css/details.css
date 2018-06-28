@@ -400,3 +400,42 @@
         #shop-detail .detail-primary .primary-goods .goods-last .tuijian span {
           text-align: center;
           margin-left: 38px; }
+
+.addafter {
+  position: absolute;
+  left: 334.5px;
+  top: 547.5px;
+  width: 562px;
+  height: 132px;
+  background: white;
+  border: 1px solid #cecece;
+  display: none; }
+  .addafter div:nth-of-type(1) {
+    width: 23px;
+    height: 23px;
+    background: url(../img/upload_ifqwkntcmi2gintdg4zdambqgyyde_221x704.png) no-repeat -10px -140px;
+    float: right;
+    cursor: pointer; }
+  .addafter div:nth-of-type(2) {
+    height: 30px;
+    line-height: 32px;
+    padding-left: 30px;
+    display: inline-block;
+    font-size: 18px;
+    color: #333;
+    background: url(../img/dui.png) no-repeat -19px -183px;
+    margin-top: 32px;
+    margin-left: 176px; }
+  .addafter div:nth-of-type(3) {
+    width: 145px;
+    height: 40px;
+    background: #ef2f23;
+    color: #fff;
+    line-height: 40px;
+    text-align: left;
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 200px;
+    margin-top: 10px; }

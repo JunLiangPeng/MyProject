@@ -301,3 +301,16 @@ nav {
     left: 157px;
     top: 0px;
     cursor: pointer; }
+
+#cartnum {
+  font-size: 12px;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: red; }
