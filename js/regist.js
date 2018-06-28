@@ -18,6 +18,9 @@
 					}
 					if(data == 1){
 						$("#tips").fadeIn().text("注册成功，请登录");
+						setTimeout(function(){
+							window.location.href = "login.html";
+						},1000)
 					}
 					if(data == 2){
 						$("tips").fadeIn().text("服务器错误，请稍后重试");

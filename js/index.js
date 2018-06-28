@@ -132,14 +132,36 @@ $(function(){
 		
 	})
 	
+	//console.log(data);
+	
+	//arr是data数据库里面的全部数据的ID
+	var arr = [];
+	for(var i in data){
+		arr.push(i);
+	}
+	console.log(arr);
+	//cdata是cookie数据库里面的数据
 	var cdata = $.cookie();
 	console.log(cdata);
 	var a = 0;
+	var arr1 = []
 	for(var i in cdata){
-		a+=Number($.cookie()[i]);
+		arr1.push(i);
+		if(arr.indexOf(i) != -1){
+			a+=Number($.cookie()[i]);
+		}
+		else{
+			a = a;
+		}
 	}
-	
 	$("#cartnum").text(a);
 	$("#cartnum1").text(a);
+	//if(cdata.indexOf("username"))
+	console.log(arr1);
+	console.log(arr1.indexOf('username'));
+	if(arr1.indexOf("username") != -1){
+		console.log(cdata.username);
+		$("#user").text(cdata.username).css("color","#FE5979");
+	}
 })
 }

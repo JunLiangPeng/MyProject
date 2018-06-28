@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="../css/base.css"/>
 		<link rel="stylesheet" href="../css/category.css"/>
 		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
 		<script src="../js/data.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/category.js" type="text/javascript" charset="utf-8"></script>
 	</head>
@@ -18,7 +19,8 @@
 				<div class="cart">
 					<a href="html/cart.html">
 						购物车
-					</a>					
+					</a>	
+					<span id="cartnum"></span>
 				</div>
 				<div class="service">消息</div>
 				<div class="coupon">优惠券</div>
@@ -39,7 +41,7 @@
 						<a href=""><span></span>微信登录</a>
 					</li>
 					<li>
-						<a href="html/login.html">登录</a>
+						<a href="html/login.html" id="user">登录</a>
 					</li>
 					<li>
 						<a href="html/regist.html">注册</a>
@@ -53,6 +55,7 @@
 					</li>
 					<li>
 						<a href="../html/cart.html"><span></span>我的购物车</a>
+						<span id="cartnum1"></span>
 					</li>
 					<li>
 						<a href=""><span></span>我的订单</a>

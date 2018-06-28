@@ -33,20 +33,18 @@
     height:600px;
     background:url(../img/mainbj.jpg) no-repeat center center;
     overflow: hidden;
-    >a{
-        float:left;
-        display: inline-block;
-        width:700px;
-        height:440px;
-        margin-left:56px;
-        margin-top:80px;
-    }
+    position:relative;
     .login{
         float:left;
         width:400px;
         background:#ffeceb;
-        margin-left:20px;
-        margin-top:80px;
+        position:absolute;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        margin:auto;
+        height:400px;
         .top{
             width:394px;
             height:70px;

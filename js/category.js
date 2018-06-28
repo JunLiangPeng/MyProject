@@ -1,6 +1,4 @@
 window.onload = function(){
-	
-
 $(function(){
 	$("#txt1").bind("input propertyinput",function(){
 		var val = $("#txt1").val();
@@ -63,7 +61,7 @@ $(function(){
 				
 				for(var j in data){
 					var a = Math.floor(Math.random()*7)+10000;
-					console.log(a);
+					//console.log(a);
 					//console.log(a);
 					//console.log("a");
 					//console.log(data[0])
@@ -116,6 +114,55 @@ $(function(){
 		window.open("details.html?&productId="+$(this).attr("productId")+"");
 	});
 	}
+	
+	
+	
+	$(".gettop").click(function(){
+		$("body,html").animate({scrollTop:0},100);
+	})
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	//console.log(data);
+	
+	//arr是data数据库里面的全部数据的ID
+	var arr = [];
+	for(var i in data){
+		arr.push(i);
+	}
+	console.log(arr);
+	//cdata是cookie数据库里面的数据
+	var cdata = $.cookie();
+	console.log(cdata);
+	var a = 0;
+	var arr1 = []
+	for(var i in cdata){
+		arr1.push(i);
+		if(arr.indexOf(i) != -1){
+			a+=Number($.cookie()[i]);
+		}
+		else{
+			a = a;
+		}
+	}
+	$("#cartnum").text(a);
+	$("#cartnum1").text(a);
+	//if(cdata.indexOf("username"))
+	console.log(arr1);
+	console.log(arr1.indexOf('username'));
+	if(arr1.indexOf("username") != -1){
+		console.log(cdata.username);
+		$("#user").text(cdata.username).css("color","#FE5979");
+	}
+	
 	
 	
 	

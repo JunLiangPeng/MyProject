@@ -26,6 +26,7 @@ $(function(){
 				}
 				
 				if(data !=0 && data !=2){
+					$.cookie("username",val1,{expires:7,path:"/"});
 					window.location.href = "../index.html";
 				}
 				
