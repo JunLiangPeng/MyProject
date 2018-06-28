@@ -1,27 +1,34 @@
 window.onload = function(){
 	$(function(){
-		
-		
-		//arr是cookie里面的数据
-		var data1 = $.cookie();
-		var arr=[];
-		for(var j in data1){
-					arr.push(j);
-				}
-		console.log(arr);
-		//console.log(data1);
-		
-		
 		//arr1是data数据的全部元素
 		var arr1 = [];
 		for(var i in data){
 			arr1.push(i)
-		}
-		console.log("arr1"+arr1);
+		};
+		//console.log(arr1);		
+		
+		//arr是cookie里面的数据
+		var data1 = $.cookie();
+		var arr=[];
+		var x = 0;
+		for(var j in data1){
+					arr.push(j);
+					if(arr1.indexOf(j) != -1){
+						x = x + Number($.cookie()[j])
+					}else{
+						x = x;
+					}
+				}
+		
+		$("#cartnum1").text(x);		
+		
+		
+		
+		$("#user").text(data1['username']).css("color","red")
+		
+		
 		var str = "";
 		for(var i in data1){
-			console.log(i);
-			console.log(arr1.indexOf(i));
 			if(arr1.indexOf(i) != -1){
 				str+=`<tr>
 					<td><input type="checkbox"/></td>
@@ -217,46 +224,6 @@ window.onload = function(){
 		$("#gopay").click(function(){
 			window.open("免费赠送付款页面哈哈哈.html");
 		})
-		
-		
-		
-		
-		
-		
-		var arr = [];
-	for(var i in data){
-		arr.push(i);
-	}
-	console.log(arr);
-	//cdata是cookie数据库里面的数据
-	var cdata = $.cookie();
-	console.log(cdata);
-	var a = 0;
-	var arr1 = []
-	for(var i in cdata){
-		arr1.push(i);
-		if(arr.indexOf(i) != -1){
-			a+=Number($.cookie()[i]);
-		}
-		else{
-			a = a;
-		}
-	}
-	$("#cartnum").text(a);
-	$("#cartnum1").text(a);
-	//if(cdata.indexOf("username"))
-	console.log(arr1);
-	console.log(arr1.indexOf('username'));
-	if(arr1.indexOf("username") != -1){
-		console.log(cdata.username);
-		$("#user").text(cdata.username).css("color","#FE5979");
-	}
-		
-		
-		
-		
-		
-		
 		
 	})
 }
